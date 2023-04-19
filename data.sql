@@ -7,6 +7,7 @@ CREATE TABLE customers (
     id integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     first_name text NOT NULL,
     last_name text NOT NULL,
+    full_name text,
     phone text,
     notes text DEFAULT '' NOT NULL
 );
